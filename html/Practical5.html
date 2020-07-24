@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            width: 80%;
+            height: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tools {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+
+        .textS {
+            text-decoration: solid;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: underline;
+            text-align: center;
+        }
+        area{
+            border: mediumaquamarine;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="nav" src="../images/practical5_1.png" width="900px" height="600px" alt="Nav Bar" border="0" usemap="#map1" />
+
+    <map id="map1" name="map1">
+        <area href="hello.html" shape="rect" coords="22,05,155,65" alt="Home" />
+        <area href="jupiter.htm" shape="rect" coords="156,05,355,65" alt="Practical 1" />
+        <area href="mars.htm" shape="rect" coords="356,05,564,65" alt="Practical 2" />
+        <area href="jupiter.htm" shape="rect" coords="565,05,769,65" alt="Practical 3" />
+        <area href="mars.htm" shape="rect" coords="770,05,976,65" alt="Practical 4" />
+        <area href="#" shape="rect" coords="977,05,1177,65" alt="Practical 5" />
+
+        <div>
+            <h2 class="textS">Introduction to Front-End Technologies</h2>
+            <img class="tools" src="../images/practical5_2.jpg" alt="Web Development Tools" width="400px" height="350px"
+                usemap="#map2">
+
+            <map name="map2">
+                <area href="hello.html" shape="rect" coords="19,08,172,166" alt="The planet Mars" />
+                <area href="jupiter.htm" shape="circle" coords="287,95,97" alt="The planet Jupiter" />
+                <area href="jupiter.htm" shape="poly" coords="231,223,288,202,347,223,337,299,288,328,239,301"
+                    alt="The planet Jupiter" />
+                <area href="jupiter.htm" shape="rect" coords="23,196,170,337" alt="The planet Jupiter" />
+            </map>
+
+            <p class="textS" style="color: maroon;">Click on any part of Logo to know more about these Technologies.</p>
+        </div>
+
+    </map>
+</body>
+
+</html>
