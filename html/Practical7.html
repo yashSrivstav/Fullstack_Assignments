@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{  
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 1200px;
+            box-shadow: 0px 0px 3px  rgba(0.15, 0.15, 0.15, 0.15);
+            /* border: solid; */
+            /* border-width: 5px;  */
+            /* border-style:solid; */
+            padding: 15px;
+            font-size: 30px;
+            margin: 50px auto;
+        }
+        .header{
+            background-color: gray;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 15px;
+            align-items: center;
+            color: whitesmoke;
+            margin-bottom: 15px;
+        }
+        .banner{
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 720px;
+            font-weight: bold;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            color: whitesmoke;
+        }
+        .section{
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .rectangle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .rectangle1{
+            background-color:tomato;
+            height: 300px;
+            width: 240px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 20px;
+        }
+        .circle1{
+            background-color:darkgoldenrod;
+            height: 240px;
+            width: 240px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px;
+        }
+        .circles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .box{
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .box::after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .right{
+            float: right;
+        }
+        .art{
+            background-color: orange;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            font-weight: bold;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            width: 570px;
+        }
+        .left{
+            background-color: grey;
+            height: 480px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            float: left;
+            font-weight: bold;
+            border-radius: 15px;
+            width: 570px;
+        }
+        .footer{
+            background-color:violet;
+            height: 80px;
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+            font-weight: bold;
+            align-items: center;
+            color: whitesmoke;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Header 
+          </div>
+          <div class="banner">
+              Banner
+          </div>
+          <h3 id="section1" class="section">Section 1</h3>
+          <div class="circles">
+              <div class="circle1"></div>
+              <div class="circle1"></div>
+              <div class="circle1"></div>
+              <div class="circle1"></div>
+          </div>
+          <h3 id="section2" class="section">Section 2</h3>
+          <div class="box">
+              <div class="left">Main Content</div>
+              <div class="right">
+                  <div class="art">Article-1</div>
+                  <div class="art">Article-2</div>
+                  <div class="art">Article-3</div>
+              </div>
+          </div>
+          <h3 id="section3" class="section">Section 3</h3>
+          <div class="rectangle">
+            <div class="rectangle1"></div>
+            <div class="rectangle1"></div>
+            <div class="rectangle1"></div>
+            <div class="rectangle1"></div>
+        </div>
+        <h3 id="section4" class="section">Section 4</h3>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+    
+</body>
+</html>
