@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 1200px;
+            /* border: solid; */
+            /* border-width: 5px;  */
+            /* border-style:solid; */
+            padding: 0 0px;
+            font-size: 30px;
+            margin: auto;
+        }
+
+        #navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            overflow: hidden;
+            background-color: grey;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        #navbar li {
+            float: left;
+        }
+
+        #navbar li a {
+            display: block;
+            text-decoration: none;
+            /* font-weight: bold; */
+            padding: 10px 30px;
+            color: white;
+            font-size: smaller;
+        }
+
+        #navbar li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        #image {
+            width: 100%;
+        }
+
+        .banner {
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            height: 700px;
+            font-weight: bold;
+            border-radius: 15px;
+            margin-bottom: 150px;
+            color: whitesmoke;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            margin: 15px;
+        }
+
+        .section {
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .rectangle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .rectangle1 {
+            background-color: tomato;
+            height: 300px;
+            width: 240px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .circle1 {
+            background-color: darkgoldenrod;
+            height: 240px;
+            width: 240px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .circles {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 150px;
+        }
+
+        }
+
+        .box {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .box::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .art {
+            background-color: orange;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            color: whitesmoke;
+            font-weight: bold;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            width: 570px;
+        }
+
+        .left {
+            background-color: grey;
+            height: 480px;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            padding: 10px;
+            color: whitesmoke;
+            float: left;
+            font-weight: bold;
+            border-radius: 15px;
+            width: 570px;
+            overflow: hidden;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: smaller;
+            font-weight: normal;
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: violet;
+            height: 80px;
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+            font-weight: bold;
+            align-items: center;
+            color: whitesmoke;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul id="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">TECHNOLOGIES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="../images/practical8_1.jpg" alt="banner" id="image">
+            <h1 class="text">PRACTICAL-8</h1>
+        </div>
+        <h3 id="section1" class="section">Team Members</h3>
+        <div class="circles">
+            <img class="circle1" src="..//images/practical8_2.png" alt="member1">
+            <img class="circle1" src="..//images/practical8_3.png" alt="member1">
+            <img class="circle1" src="..//images/practical8_4.png" alt="member1">
+            <img class="circle1" src="..//images/practical8_5.png" alt="member1">
+
+        </div>
+        <h3 id="section2" class="section">About Us</h3>
+        <div class="box">
+            <div class="left">
+                <h4>About Project</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, dolor! Tempora, quae vero. Rem vel,
+                    error laboriosam aspernatur non earum porro ex voluptas exercitationem iure. Officiis est recusandae
+                    ut dolores natus praesentium eum, quidem modi magni cum quos mollitia dolore numquam accusamus
+                    excepturi ipsam minima unde iure libero fuga laudantium possimus deleniti odit! Magni magnam culpa
+                    numquam explicabo inventore libero! Modi, eius quia? Dolor consectetur doloremque eius magnam est
+                    perspiciatis et officiis, labore laudantium maiores nesciunt, dicta doloribus cupiditate impedit
+                    illo quae sequi omnis.</p>
+            </div>
+            <div class="right">
+                <div class="art">Project-1</div>
+                <div class="art">Project-2</div>
+                <div class="art">Project-3</div>
+            </div>
+        </div>
+        <h3 id="section3" class="section">Section 3</h3>
+        <div class="rectangle">
+            <div class="rectangle1"></div>
+            <div class="rectangle1"></div>
+            <div class="rectangle1"></div>
+            <div class="rectangle1"></div>
+        </div>
+        <h3 id="section4" class="section">Section 4</h3>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+
+</body>
+
+</html>
