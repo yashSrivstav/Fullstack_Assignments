@@ -53,7 +53,7 @@
             color: black;
         }
 
-        #image {
+        .image {
             width: 100%;
         }
 
@@ -74,6 +74,11 @@
             margin: 15px;
         }
 
+        .ptext {
+            position: absolute;
+            color: black;
+        }
+
         .section {
             text-align: center;
             margin-bottom: 15px;
@@ -81,19 +86,64 @@
         }
 
         .rectangle {
-            display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 150px;
+            display: flex;
         }
 
         .rectangle1 {
-            background-color: tomato;
-            height: 300px;
+            background-color: lightgray;
+            /* height: 300px; */
+            /* padding: 15px; */
             width: 240px;
+            /* padding: 15px; */
             border-radius: 15px;
-            display: inline-block;
+            float: left;
             margin: 20px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .rectangle1 img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .rectangle1 h6 {
+            text-align: center;
+            margin: 0px 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .rectangle1 p {
+            /* text-align: justify; */
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 10 px;
+            word-spacing: 8px;
+            line-height: 20px;
+        }
+
+        .rectangle1 a {
+            display: block;
+            font-size: small;
+            text-align: center;
+            background-color: red;
+            padding: 10px;
+            margin: 0px, 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: cornsilk;
+        }
+
+        .rectangle1 a:hover {
+            background-color: darkblue;
         }
 
         .circle1 {
@@ -112,11 +162,10 @@
             margin-bottom: 150px;
         }
 
-        }
 
         .box {
             margin-top: 30px;
-            margin-bottom: 15px;
+            margin-bottom: 150px;
         }
 
         .box::after {
@@ -131,7 +180,7 @@
 
         .art {
             background-color: orange;
-            height: 150px;
+            height: 155px;
             display: flex;
             justify-content: center;
             /* align-items: center; */
@@ -158,7 +207,7 @@
         }
 
         p {
-            margin-top: 10px;
+            margin-top: 15px;
             font-size: smaller;
             font-weight: normal;
             text-align: justify;
@@ -167,14 +216,28 @@
         .footer {
             background-color: violet;
             height: 80px;
-            display: flex;
             margin-top: 30px;
-            justify-content: center;
             font-weight: bold;
-            align-items: center;
-            color: whitesmoke;
+            /* align-items: center; */
             border-radius: 15px;
             margin-bottom: 15px;
+            padding: 5px;
+        }
+
+        .footer p {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .footer p a {
+            text-decoration: none;
+        }
+
+        #back {
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -191,7 +254,7 @@
             </ul>
         </div>
         <div class="banner">
-            <img src="../images/practical8_1.jpg" alt="banner" id="image">
+            <img src="../images/practical8_1.jpg" alt="banner" class="image">
             <h1 class="text">PRACTICAL-8</h1>
         </div>
         <h3 id="section1" class="section">Team Members</h3>
@@ -215,21 +278,60 @@
                     illo quae sequi omnis.</p>
             </div>
             <div class="right">
-                <div class="art">Project-1</div>
-                <div class="art">Project-2</div>
-                <div class="art">Project-3</div>
+                <div class="art">
+                    <img src="..//images/practical8_6.jpg" alt="Project-1">
+                    <h4 class="ptext">Project-1</h4>
+                </div>
+                <div class="art">
+                    <img src="..//images/practical8_7.jpeg" alt="Project-1">
+                    <h4 class="ptext">Project-2</h4>
+                </div>
+                <div class="art">
+                    <img src="..//images/practical8_8.jpg" alt="Project-1">
+                    <h4 class="ptext">Project-3</h4>
+                </div>
             </div>
         </div>
-        <h3 id="section3" class="section">Section 3</h3>
+        <h3 id="section3" class="section">Technologies</h3>
         <div class="rectangle">
-            <div class="rectangle1"></div>
-            <div class="rectangle1"></div>
-            <div class="rectangle1"></div>
-            <div class="rectangle1"></div>
+            <div class="rectangle1">
+                <img src="../images/practical5_HTML.png" alt="HTML">
+                <h6>Introduction to HTML</h6>
+                <p>Hypertext Markup Language is the standard markup language for documents designed to be
+                    displayed in a web browser. It is most commanly used.
+                </p>
+                <a href="Practical5_HTML.html" target="_blank">Read More</a>
+            </div>
+            <div class="rectangle1">
+                <img src="../images/practical5_CSS.png" alt="CSS">
+                <h6>Introduction to CSS</h6>
+                <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify
+                    the process of making web pages presentable.</p>
+                <a href="Practical5_CSS.html" target="_blank">Read More</a>
+            </div>
+            <div class="rectangle1">
+                <img src="../images/practical5_JS.png" alt="JS">
+                <h6>Introduction to JS</h6>
+                <p>JavaScript is a cross-platform, object-oriented language used to make webpages interactive
+                    (e.g., having complex animations, clickable buttons, etc).</p>
+                <a href="Practical5_JS.html" target="_blank">Read More</a>
+            </div>
+            <div class="rectangle1">
+                <img src="../images/practical5_Bootstrap.jpg" alt="Bootstrap">
+                <h6>Introduction to Bootstrap</h6>
+                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web
+                    development. It is the 7th starred project on GitHub.</p>
+                <a href="Practical5_Bootstrap.html" target="_blank">Read More</a>
+            </div>
         </div>
-        <h3 id="section4" class="section">Section 4</h3>
+        <h3 id="section4" class="section">Contact</h3>
         <div class="footer">
-            Footer
+            <div>
+                <p>Website Template for Practical-8 <a href="#">© Beta-Labs</a></p>
+            </div>
+            <div>
+                <a id="back" href="#">Back to top</a>
+            </div>
         </div>
     </div>
 
