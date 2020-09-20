@@ -115,6 +115,175 @@
         display: inline-block;
         margin-left: 15px;
     }
+
+    /* Template 2 CSS */
+    .template2 {
+        width: 300px;
+        height: 350px;
+        border-radius: 6px;
+        background-color: white;
+        margin: 20px;
+    }
+
+    .form2head {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form2head h1 {
+        color: deeppink;
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .form2footer {
+        background: linear-gradient(to bottom, #2f3640, grey);
+        height: 67px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form2footer .socialicons i {
+        color: white;
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+
+    .form2container {
+        padding: 20px;
+    }
+
+    input[type=email] {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid grey;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    input[type=password] {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid grey;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    input[type=checkbox] {
+        margin: 20px 0;
+    }
+
+    .form2container input[type=submit] {
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        background-color: deeppink;
+        padding: 10px 20px;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .form2container p {
+        font-size: 12px;
+        color: grey;
+        display: inline-block;
+    }
+
+    .form2container p b {
+        color: #3498db;
+    }
+
+    .form2container p#p3 {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    /* Template 3 CSS */
+    .template1 {
+        width: 300px;
+        height: 350px;
+        border-radius: 6px;
+        background-color: white;
+        margin: 20px;
+    }
+
+    .form1head {
+        width: 100%;
+        height: 100px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        background: linear-gradient(to left, orange, red);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form1head h1 {
+        color: white;
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .form1head .socialicons i {
+        color: white;
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+
+    .form1container {
+        padding: 20px;
+    }
+
+    input[type=email] {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid grey;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    input[type=password] {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid grey;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        background-color: grey;
+        padding: 10px 20px;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .form1container p {
+        font-size: 12px;
+        color: grey;
+        padding: 20px 0;
+        text-align: right;
+    }
+
+    .form1container p b {
+        color: black;
+    }
+
+    .form1container p#p2 {
+        display: inline-block;
+        margin-left: 15px;
+    }
 </style>
 
 <header>
@@ -144,13 +313,13 @@
             <input type="submit" value="LOGIN">
             <p id="p2">Don't have account? <b>SIGN UP</b></p>
         </div>
-        <div class="form-footer-t1"></div>
+        <div class="form1footer"></div>
     </div>
 
     <!-- TEMPLATE 2 -->
     <div class="template2">
         <div class="form2head">
-            <h1>LOGIN</h1>
+            <h1>SIGN UP</h1>
         </div>
         <div class="form2container">
             <div>
@@ -162,9 +331,9 @@
             <input type="checkbox" name="chk" id="chk">
             <p>Accept the <b>Terms and Conditions</b></p>
             <input type="submit" value="SIGNUP">
-            <p id="p2">Have an account? <b>SIGN IN</b></p>
+            <p id="p3">Have an account? <b>SIGN IN</b></p>
         </div>
-        <div class="form-footer-t2">
+        <div class="form2footer">
             <div class="socialicons">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
@@ -174,16 +343,11 @@
     </div>
 
     <!-- TEMPLATE 3 -->
-    <div class="template1">
-        <div class="form1head">
-            <h1>LOGIN</h1>
-            <div class="socialicons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google"></i>
-            </div>
+    <div class="template3">
+        <div class="form3head">
+            <h1>SIGN IN</h1>
         </div>
-        <div class="form1container">
+        <div class="form3container">
             <div>
                 <input type="email" name="email" id="email" placeholder="Enter your email">
             </div>
@@ -191,8 +355,15 @@
                 <input type="password" name="password" id="password" placeholder="Enter your password">
             </div>
             <p>Forget <b>Password?</b></p>
-            <input type="submit" value="LOGIN">
-            <p id="p2">Don't have account? <b>SIGN UP</b></p>
+            <input type="submit" value="SIGNIN">
+            <p id="p4"><b>Or sign in with</b></p>
+        </div>
+        <div class="form-footer-t3">
+            <div class="socialicons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
+            </div>
         </div>
     </div>
 </div>
