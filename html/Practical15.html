@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: grey;
+    }
+
+    .heading {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 50px;
+        color: white;
+    }
+
+    button {
+        padding: 5px 15px;
+        background-color: yellow;
+        color: black;
+        font-size: 30px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    #minus {
+        color: grey;
+        padding: 5px 18px;
+        font-weight: bolder;
+
+    }
+
+    #plus {
+        font-weight: bold;
+
+    }
+
+    #num {
+        margin: 0px 140px;
+        color: yellow;
+        font-size: 50px;
+    }
+</style>
+<h1 class="heading">COUNTER</h1>
+<div class="container">
+    <button disabled id="minus" onclick="decrease()">-</button>
+    <h1 id="num">0</h1>
+    <button id="plus" onclick="increase()">+</button>
+</div>
+
+<script>
+    function increase() {
+        let a = document.getElementById("num");
+        a.innerHTML = parseInt(a.innerHTML) + 1;
+        document.getElementById("minus").disabled = false;
+        document.getElementById("minus").style.color = "black";
+        document.getElementById("plus").style.boxShadow = "2px 2px 2px black";
+        document.getElementById("minus").style.boxShadow = "none";
+
+    }
+    function decrease() {
+        let a = document.getElementById("num");
+        document.getElementById("plus").style.boxShadow = "none";
+        document.getElementById("minus").style.boxShadow = "2px 2px 2px black";
+        if (a.innerHTML == "1") {
+            document.getElementById("minus").disabled = true;
+            document.getElementById("minus").style.color = "grey";
+            document.getElementById("minus").style.boxShadow = "none";
+            document.getElementById("plus").style.boxShadow = "2px 2px 2px black";
+        }
+        a.innerHTML = parseInt(a.innerHTML) - 1;
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
