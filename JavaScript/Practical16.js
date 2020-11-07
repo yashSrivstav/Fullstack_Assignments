@@ -33,6 +33,7 @@ function create(event) {
         newDiv.appendChild(deletebtn);
 
         todolist.appendChild(newDiv);
+        todoin.value = "";
     }
 }
 
