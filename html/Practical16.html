@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>To-Do List</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(120deg, skyblue, blue);
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+    }
+
+    h1,
+    form {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    form input,
+    form button {
+        padding: 10px;
+        border: none;
+        font-size: 24px;
+        background: white;
+        outline: none;
+    }
+
+    form input {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    form button {
+        border-bottom-right-radius: 20px;
+        color: blue;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        color: white;
+        background-color: skyblue;
+    }
+</style>
+
+<body>
+    <h1>FullStack To-do List</h1>
+    <form>
+        <input type="text" class="todoin">
+        <button class="todobt">
+            <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </button>
+    </form>
+    <div class="todocontain">
+        <ul class="todolist">
+
+        </ul>
+    </div>
+    <script src="Practical16.js"></script>
+</body>
+
+</html>
