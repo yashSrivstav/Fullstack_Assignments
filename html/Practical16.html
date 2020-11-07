@@ -34,7 +34,7 @@
     form button {
         padding: 10px;
         border: none;
-        font-size: 24px;
+        font-size: 20px;
         background: white;
         outline: none;
     }
@@ -42,6 +42,7 @@
     form input {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        width: 30%;
     }
 
     form button {
@@ -55,22 +56,74 @@
         color: white;
         background-color: skyblue;
     }
+
+    .todocontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .todolist {
+        list-style: none;
+        min-width: 20%;
+    }
+
+    .todo {
+        margin: 8px;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .todoitem {
+        flex: 1;
+        margin: 0 8px;
+    }
+
+    .checkbtn,
+    .deletebtn {
+        background-color: green;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 16px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .deletebtn {
+        background-color: red;
+        border-bottom-right-radius: 20px;
+    }
+
+    .fa-check,
+    .fa-trash {
+        pointer-events: none;
+    }
+
+    .complete {
+        text-decoration: line-through;
+        opacity: 50%;
+    }
 </style>
 
 <body>
     <h1>FullStack To-do List</h1>
     <form>
         <input type="text" class="todoin">
-        <button class="todobt">
+        <button class="todobtn">
             <i class="fa fa-plus-square" aria-hidden="true"></i>
         </button>
     </form>
     <div class="todocontain">
         <ul class="todolist">
-
         </ul>
     </div>
-    <script src="Practical16.js"></script>
+    <script src="../JavaScript/Practical16.js"></script>
 </body>
 
 </html>
