@@ -4,10 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Greetings Clock</title>
 </head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        height: 100vh;
+
+    }
+
+    #time {
+        font-size: 8rem;
+        /*(8*16px) */
+
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        opacity: .5;
+    }
+</style>
 
 <body>
+    <time id="time">07:07:07 P.M.</time>
+    <h1 id="greet">Good Morning</h1>
+    <h2 id="name">Yash Srivastava</h2>
     <script src="../JavaScript/Practical17.js"></script>
 </body>
 
