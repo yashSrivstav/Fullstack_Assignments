@@ -21,6 +21,9 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: black;
         height: 100vh;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
 
     }
 
@@ -38,12 +41,17 @@
         font-size: 3rem;
         opacity: .5;
     }
+
+    #day {
+        margin-top: 1rem;
+    }
 </style>
 
 <body>
-    <time id="time">07:07:07 P.M.</time>
+    <time id="time"></time>
     <h1 id="greet">Good Morning</h1>
-    <h2 id="name">Yash Srivastava</h2>
+    <h2 id="name" contenteditable="true"></h2>
+    <h3 id="day"></h3>
     <script src="../JavaScript/Practical17.js"></script>
 </body>
 
