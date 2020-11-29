@@ -8,6 +8,107 @@
     <title>Practical-18</title>
 
 </head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: darkslateblue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: #fff;
+        width: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .header {
+        background-color: #f7f7f7;
+    }
+
+    .header h2 {
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .form {
+        padding: 20px 30px;
+    }
+
+    .formctrl {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .formctrl label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .formctrl input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        outline: none;
+        border: 2px solid #f0f0f0;
+    }
+
+    .formctrl i {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        visibility: hidden;
+    }
+
+    .formctrl small {
+        position: absolute;
+        left: 0px;
+        margin-top: 5px;
+        visibility: hidden;
+    }
+
+    .form button {
+        display: block;
+        width: 100%;
+        background-color: darkslateblue;
+        color: white;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .formctrl .success input {
+        border-color: green;
+    }
+
+    .formctrl .success .fa-check-circle {
+        visibility: visible;
+        border-color: green;
+    }
+
+    .formctrl .error input {
+        border-color: red;
+    }
+
+    .formctrl .error .fa-check-circle {
+        visibility: visible;
+        border-color: red;
+    }
+</style>
 
 <body>
     <div class="container">
