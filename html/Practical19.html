@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-19</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: darkslateblue;
+        height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 360px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 20px;
+        position: relative;
+        /* overflow: hidden; */
+    }
+
+    .container form {
+        position: absolute;
+        top: 80px;
+        left: 40px;
+        width: 280px;
+    }
+
+    form h3 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: darkslateblue;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px 5px;
+        margin: 5px 0px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid darkslateblue;
+        background: transparent;
+    }
+
+    .btn {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    form button {
+        width: 120px;
+        height: 35px;
+        border: none;
+        background-color: crimson;
+        border-radius: 20px;
+        color: white;
+    }
+
+    #form2 {
+        left: 450px;
+    }
+
+    #form3 {
+        left: 450px
+    }
+
+    .steprow {
+        width: 360px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 40px;
+        box-shadow: 0px -1px 5px -1px black;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .stepcol {
+        width: 120px;
+        text-align: center;
+        font-weight: 700;
+        color: black;
+        z-index: 1;
+    }
+
+    #progress {
+        width: 120px;
+        border-top-left-radius: 20px;
+        height: 100%;
+        position: absolute;
+        background-color: crimson;
+    }
+
+    #progress::after {
+        content: '';
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        right: -20px;
+        top: 0px;
+        border-left: 20px solid crimson;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form id="form1">
+            <h3>CREATE ACCOUNT</h3>
+            <input type="text" placeholder="Enter Email ID">
+            <input type="password" placeholder="Enter Password">
+            <input type="password" placeholder="Confirm Passowrd">
+            <div class="btn">
+                <button type="button" id="next1">Next</button>
+            </div>
+        </form>
+        <form id="form2">
+            <h3>SOCIAL LINKS</h3>
+            <input type="text" placeholder="LinkedIN">
+            <input type="text" placeholder="GitHub">
+            <input type="text" placeholder="Facebook">
+            <div class="btn">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+        </form>
+        <form id="form3">
+            <h3>PERSONAL INFORMATION</h3>
+            <input type="text" placeholder="First Name">
+            <input type="password" placeholder="Last Name">
+            <input type="password" placeholder="Mobile No">
+            <div class="btn">
+                <button type="button" id="back2">Back</button>
+                <button type="button">Submit</button>
+            </div>
+        </form>
+        <dev class="steprow">
+            <div id="progress"></div>
+            <div class="stepcol">
+                <small>Step-1</small>
+            </div>
+            <div class="stepcol">
+                <small>Step-2</small>
+            </div>
+            <div class="stepcol">
+                <small>Step-3</small>
+            </div>
+        </dev>
+    </div>
+    <script src="../JavaScript/Practical19.js"></script>
+</body>
+
+</html>
