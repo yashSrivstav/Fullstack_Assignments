@@ -29,6 +29,7 @@
         width: 400px;
         border-radius: 20px;
         overflow: hidden;
+        box-shadow: 0px 0px 5px white;
     }
 
     .header {
@@ -91,22 +92,27 @@
         text-align: center;
     }
 
-    .formctrl .success input {
+    .formctrl.success input {
         border-color: green;
     }
 
-    .formctrl .success .fa-check-circle {
+    .formctrl.success .fa-check-circle {
         visibility: visible;
-        border-color: green;
+        color: green;
     }
 
-    .formctrl .error input {
+    .formctrl.error input {
         border-color: red;
     }
 
-    .formctrl .error .fa-check-circle {
+    .formctrl.error .fa-exclamation-circle {
         visibility: visible;
-        border-color: red;
+        color: red;
+    }
+
+    .formctrl.error small {
+        visibility: visible;
+        color: red;
     }
 </style>
 
